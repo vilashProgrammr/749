@@ -54,7 +54,7 @@ describe('SearchBarComponent', () => {
   it('should filter heroes array', (() => {
     component.defaultHeroes = [
       new Hero({id: 1, name: 'batman', default: true}),
-      new Hero({id: 2, name: 'spiderman', default: false})
+      new Hero({id: 2, name: 'spiderman2', default: false})
     ];
     expect(component.filterHeroes('batman').length).toBe(1);
     expect(component.filterHeroes('spiderman').length).toBe(0);
